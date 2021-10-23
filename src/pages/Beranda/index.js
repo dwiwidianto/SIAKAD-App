@@ -1,9 +1,11 @@
 import React from "react";
-import { Dimensions, StyleSheet, Text, View, Image } from "react-native";
+import { Dimensions, StyleSheet, Text, View, Image, Button } from "react-native";
 import { UserIcon, BoyIcon } from "../../assets/images";
 import { CardTotalKuliah, CardInformation, ButtonLayanan } from "../../components";
+import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
+import { createStackNavigator } from "@react-navigation/stack";
 
-const Home = () => {
+const Home = ({navigation}) => {
   return (
     <>
       <View style={styles.page}>
@@ -27,7 +29,7 @@ const Home = () => {
         <View style={styles.iconLayanan}>
           <ButtonLayanan title="Jadwal" />
           <ButtonLayanan title="Presensi"/>
-          <ButtonLayanan title="Nilai" />
+          <ButtonLayanan title="Nilai" onPress={() => navigation.navigate("Nilai")}/>
           <ButtonLayanan title="Biaya Kuliah"/>
           <ButtonLayanan title="KRS"/>
           <ButtonLayanan title="EDOM"/>

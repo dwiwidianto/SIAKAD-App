@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import { IconCalendar } from "../../assets/";
 import { COLOR_CARD } from "../../utils/constantColor";
 
-const index = ({ title }) => {
+const index = ({ title, onPress,  }) => {
   const Icon = () => {
     if (title === "Jadwal") return <IconCalendar />;
     if (title === "Presensi") return <IconCalendar />;
@@ -14,7 +14,7 @@ const index = ({ title }) => {
     return <IconCalendar />
   };
   return (
-    <TouchableOpacity style={styles.contianer}>
+    <TouchableOpacity onPress={onPress} style={styles.contianer}>
       <View style={styles.button}>
         <Icon />
       </View>
