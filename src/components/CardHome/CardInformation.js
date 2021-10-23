@@ -14,7 +14,7 @@ export default CardInformation;
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "white",
-    padding: 35,
+    padding: 50,
     marginHorizontal: 30,
     marginTop: 30,
     borderRadius: 10,

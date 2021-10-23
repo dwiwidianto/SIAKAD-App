@@ -1,28 +1,38 @@
 import React from "react";
 import { Dimensions, StyleSheet, Text, View, Image } from "react-native";
 import { UserIcon, BoyIcon } from "../../assets/images";
-import { CardTotalKuliah, CardInformation } from "../../components"
+import { CardTotalKuliah, CardInformation, ButtonLayanan } from "../../components";
 
 const Home = () => {
   return (
     <>
-    <View style={styles.page}>
-      <View style={styles.logoKampus}>
-        <Image source={UserIcon} style={styles.imageSize} />
-      </View>
-      <View style={styles.fotoProfile}>
-        <View style={styles.textLabel}>
-          <Text style={styles.fontStyle}>Nama Mahasiswa</Text>
-          <Text style={styles.fontStyle}>Jurusan</Text>
-          <Text style={styles.fontStyle}>Nama Kampus</Text>
+      <View style={styles.page}>
+        <View style={styles.logoKampus}>
+          <Image source={UserIcon} style={styles.imageSize} />
         </View>
-        <Image source={BoyIcon} style={styles.imageSize} />
+        <View style={styles.fotoProfile}>
+          <View style={styles.textLabel}>
+            <Text style={styles.fontStyle}>Nama Mahasiswa</Text>
+            <Text style={styles.fontStyle}>Jurusan</Text>
+            <Text style={styles.fontStyle}>Nama Kampus</Text>
+          </View>
+          <Image source={BoyIcon} style={styles.imageSize} />
+        </View>
       </View>
-    </View>
-    <View>
-      <CardTotalKuliah/>
-      <CardInformation />
-    </View>
+      <View>
+        <CardTotalKuliah />
+        <CardInformation />
+      </View>
+      <View style={styles.layanan}>
+        <View style={styles.iconLayanan}>
+          <ButtonLayanan title="Jadwal" />
+          <ButtonLayanan title="Presensi"/>
+          <ButtonLayanan title="Nilai" />
+          <ButtonLayanan title="Biaya Kuliah"/>
+          <ButtonLayanan title="KRS"/>
+          <ButtonLayanan title="EDOM"/>
+        </View>
+      </View>
     </>
   );
 };
@@ -56,5 +66,14 @@ const styles = StyleSheet.create({
     marginRight: -10,
     textAlign: "right",
   },
+  layanan: {
+    paddingLeft: 30,
+    paddingTop: 20,
+  },
+  iconLayanan: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginTop: 10,
+    flexWrap: 'wrap'
+  },
 });
-

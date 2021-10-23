@@ -6,8 +6,9 @@ import IconNotification from "./Notification.svg";
 import IconNotificationActive from "./NotificationActive.svg";
 import IconProfile from "./Profile.svg";
 import IconProfileActive from "./ProfileActive.svg";
+import IconCalendar from  "./calendar.svg"
 
 import IconHome from "./fi-rr-home.svg";
 import IconHomeActive from "./fi-rr-home-1.svg";
 
-export { IconHome, IconHomeActive, IconOverview, IconOverviewActive, IconNotification, IconNotificationActive, IconProfile, IconProfileActive };
+export { IconHome, IconHomeActive, IconOverview, IconOverviewActive, IconNotification, IconNotificationActive, IconProfile, IconProfileActive, IconCalendar };
