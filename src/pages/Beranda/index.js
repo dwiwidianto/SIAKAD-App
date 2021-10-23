@@ -2,8 +2,6 @@ import React from "react";
 import { Dimensions, StyleSheet, Text, View, Image, Button } from "react-native";
 import { UserIcon, BoyIcon } from "../../assets/images";
 import { CardTotalKuliah, CardInformation, ButtonLayanan } from "../../components";
-import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
-import { createStackNavigator } from "@react-navigation/stack";
 
 const Home = ({navigation}) => {
   return (
