@@ -3,13 +3,14 @@ import {StyleSheet, Text, View} from 'react-native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {Beranda, Profile, Overview, Notifikasi, Login} from '../pages/';
+import {ButtonNavigator} from '../components';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
 const ButtomNav = () => {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator  tabBar={props => <ButtonNavigator {...props} />}>
       <Tab.Screen name="Beranda" component={Beranda} options={{headerShown: false}} />
       <Tab.Screen name="Overview" component={Overview} options={{headerShown: false}} />
       <Tab.Screen name="Notifikasi" component={Notifikasi} options={{headerShown: false}} />
