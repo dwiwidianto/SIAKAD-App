@@ -6,7 +6,7 @@ import Aktivitas from "./aktivitas";
 import Transkip from "./transkip";
 
 const Tab = createMaterialTopTabNavigator();
-const nilai = () => {
+const Nilai = () => {
   return (
     <Tab.Navigator>
       <Tab.Screen name="KHS" component={KHS} />
@@ -16,6 +16,6 @@ const nilai = () => {
   );
 };
 
-export default nilai;
+export default Nilai;
 
 const styles = StyleSheet.create({});

@@ -1,14 +1,4 @@
-import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
 
-const Notifikasi = () => {
-  return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text>Notifikasi Screen</Text>
-    </View>
-  );
-};
+import Notifikasi from './notifikasi'
 
-export default Notifikasi;
-
-const styles = StyleSheet.create({});
+export {Notifikasi}

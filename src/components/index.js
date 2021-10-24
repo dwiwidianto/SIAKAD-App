@@ -1,10 +1,6 @@
-import ButtonNavigator from "./ButtonNavigator";
+export * from "./ButtonNavigator";
+export * from "./ButtonLayanan";
+export * from "./CardCustom";
 import TabItem from "./TabItem";
-import CardTotalKuliah from "./CardCustom/CardTotalKuliah"
-import CardInformation from "./CardCustom/CardInformation"
-import CardNilai from "./CardCustom/CardNilai";
-import CardListMatkul from "./CardCustom/CardListMatkul";
-import CardTranskip from "./CardCustom/CardTranskip";
-import ButtonLayanan from "./ButtonLayanan"
+export { TabItem };
 
-export {ButtonNavigator, TabItem, CardInformation, CardTotalKuliah, CardNilai, CardListMatkul, ButtonLayanan, CardTranskip}

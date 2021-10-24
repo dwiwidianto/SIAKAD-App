@@ -1,14 +1,3 @@
-import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import Profile from "./profile";
 
-const Profile = () => {
-  return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text>Profile Screen</Text>
-    </View>
-  );
-};
-
-export default Profile;
-
-const styles = StyleSheet.create({});
+export {Profile}
