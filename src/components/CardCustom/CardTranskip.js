@@ -1,20 +1,16 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-const CardNilai = () => {
+const CardTranskip = () => {
   return (
     <View style={styles.container}>
       <View style={styles.textLayout}>
         <View style={styles.textStart}>
-          <Text style={{marginBottom: 15, fontSize: 25 }}>0</Text>
-          <Text>SKS Semester</Text>
-        </View>
-        <View style={styles.text}>
-          <Text style={{marginBottom: 15, fontSize: 25 }}>0</Text>
-          <Text>IP Semester</Text>
+          <Text style={{marginBottom: 15, fontSize: 25 }}>64</Text>
+          <Text>SKS Total</Text>
         </View>
         <View style={styles.textEnd}>
-          <Text style={{marginBottom: 15, fontSize: 25 }}>0</Text>
+          <Text style={{marginBottom: 15, fontSize: 25 }}>38</Text>
           <Text>IP Kumulatif</Text>
         </View>
       </View>
@@ -22,7 +18,7 @@ const CardNilai = () => {
   );
 };
 
-export default CardNilai;
+export default CardTranskip;
 
 const styles = StyleSheet.create({
   container: {
@@ -50,12 +46,12 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   textStart: {
-    marginLeft: 20,
+    marginLeft: 70,
     alignItems: "center",
     justifyContent: "center",
   },
   textEnd: {
-    marginRight: 20,
+    marginRight: 70,
     alignItems: "center",
     justifyContent: "center",
   },
