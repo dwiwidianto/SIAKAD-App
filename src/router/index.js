@@ -22,7 +22,7 @@ const ButtomNav = () => {
 
 const Router = () => {
   return (
-    <Stack.Navigator initialRouteName="ButtonNav">
+    <Stack.Navigator>
       <Stack.Screen name="ButtomNav" component={ButtomNav} options={{ headerShown: false }} />
       <Stack.Screen name="Nilai" component={Nilai} options={{ headerShown: true}}/>
     </Stack.Navigator>
