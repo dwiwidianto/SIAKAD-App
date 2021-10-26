@@ -23,7 +23,7 @@ const ButtomNav = () => {
 const Router = () => {
   return (
     <Stack.Navigator>
-      {/* <Stack.Screen name="LoginScreen" component={LoginScreen} options={{headerShown: false}}/> */}
+      <Stack.Screen name="LoginScreen" component={LoginScreen} options={{headerShown: false}}/>
       <Stack.Screen name="ButtomNav" component={ButtomNav} options={{ headerShown: false }} />
       <Stack.Screen name="Nilai" component={Nilai} options={{ headerShown: true}}/>
     </Stack.Navigator>

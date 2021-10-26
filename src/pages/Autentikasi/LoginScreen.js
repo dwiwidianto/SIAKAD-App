@@ -4,7 +4,7 @@ import { Text } from "react-native-paper";
 import { theme } from "../../utils/theme";
 import {emailValidator} from "../../FormValidator/emailValidator";
 import {passwordValidator} from "../../FormValidator/passwordValidator";
-import { ButtonLogin, Logo, TextInput, BackButton, Header, Background } from "../../components/LoginComponents";
+import { ButtonLogin, Logo, TextInput,  Header, Background } from "../../components/LoginComponents";
 
 export default function LoginScreen({ navigation }) {
   const [email, setEmail] = useState({ value: '', error: '' })
@@ -27,7 +27,6 @@ export default function LoginScreen({ navigation }) {
 
   return (
     <Background>
-      <BackButton goBack={navigation.goBack} />
       <Logo />
       <Header>Welcome back.</Header>
       <TextInput
@@ -61,12 +60,6 @@ export default function LoginScreen({ navigation }) {
       <ButtonLogin mode="contained" onPress={onLoginPressed}>
         Login
       </ButtonLogin>
-      <View style={styles.row}>
-        <Text>Don’t have an account? </Text>
-        <TouchableOpacity onPress={() => navigation.replace('RegisterScreen')}>
-          <Text style={styles.link}>Sign up</Text>
-        </TouchableOpacity>
-      </View>
     </Background>
   )
 }
