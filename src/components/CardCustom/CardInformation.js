@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from "react-native";
 const CardInformation = () => {
   return (
     <View style={styles.container}>
-      <Text>E-Learning Kampus</Text>
+      <Text style={styles.textStyle}>E-Learning Kampus</Text>
     </View>
   );
 };
@@ -13,6 +13,7 @@ export default CardInformation;
 
 const styles = StyleSheet.create({
   container: {
+    alignItems: "center",
     backgroundColor: "white",
     padding: 50,
     marginHorizontal: 30,
@@ -28,4 +29,8 @@ const styles = StyleSheet.create({
 
     elevation: 3,
   },
+  textStyle:{
+    fontSize: 25,
+    fontWeight:"bold"
+  }
 });
