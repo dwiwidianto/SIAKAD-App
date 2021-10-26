@@ -1,4 +1,7 @@
 
-import Notifikasi from './notifikasi'
+// import Notifikasi from './notifikasi'
 
-export {Notifikasi}
+// export {Notifikasi}
+
+
+export { default as Notifikasi} from './notifikasi'

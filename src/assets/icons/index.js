@@ -1,14 +1,22 @@
 // import IconHome from "./Home.svg";
 // import IconHomeActive from "./HomeActive.svg";
-import IconOverview from "./Overview.svg";
-import IconOverviewActive from "./OverviewActive.svg";
-import IconNotification from "./Notification.svg";
-import IconNotificationActive from "./NotificationActive.svg";
-import IconProfile from "./Profile.svg";
-import IconProfileActive from "./ProfileActive.svg";
-import IconCalendar from  "./calendar.svg"
 
-import IconHome from "./fi-rr-home.svg";
-import IconHomeActive from "./fi-rr-home-1.svg";
+/* Icon Navigator*/
+export { default as IconOverview } from "./Overview.svg";
+export { default as IconOverviewActive } from "./OverviewActive.svg";
+export { default as IconNotification } from "./Notification.svg";
+export { default as IconNotificationActive } from "./NotificationActive.svg";
+export { default as IconProfile } from "./Profile.svg";
+export { default as IconProfileActive } from "./ProfileActive.svg";
+export { default as IconHome } from "./home.svg";
+export { default as IconHomeActive } from "./homeActive.svg";
+/* End Icon Navigator*/
 
-export { IconHome, IconHomeActive, IconOverview, IconOverviewActive, IconNotification, IconNotificationActive, IconProfile, IconProfileActive, IconCalendar };
+/* Icon Home Page */
+export { default as IconJadwal } from "./jadwal.svg";
+export { default as IconPresensi } from "./presensi.svg";
+export { default as IconNilai } from "./nilai.svg";
+export { default as IconBiayaKuliah } from "./biaya-kuliah.svg";
+export { default as IconKRS } from "./KRS.svg";
+export { default as IconEdom } from "./edom.svg";
+/* End Icon Home Page */

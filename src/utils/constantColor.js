@@ -1,1 +1,1 @@
-export const COLOR_CARD = '#000000'
+export const COLOR_CARD = '#fff'

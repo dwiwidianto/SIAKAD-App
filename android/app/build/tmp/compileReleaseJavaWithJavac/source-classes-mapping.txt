@@ -1,9 +1,0 @@
-com/siakad/MainActivity.java
- com.siakad.MainActivity
-com/siakad/BuildConfig.java
- com.siakad.BuildConfig
-com/siakad/MainApplication.java
- com.siakad.MainApplication
- com.siakad.MainApplication$1
-com/facebook/react/PackageList.java
- com.facebook.react.PackageList

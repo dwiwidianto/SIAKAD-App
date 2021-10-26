@@ -1,6 +1,6 @@
 import React from "react";
 import { Dimensions, StyleSheet, Text, View, Image, Button } from "react-native";
-import { UserIcon, BoyIcon } from "../../assets/images";
+import { IconUkrida, BoyIcon } from "../../assets/images";
 import { CardTotalKuliah, CardInformation, ButtonLayanan } from "../../components";
 
 const Beranda = ({navigation}) => {
@@ -8,7 +8,7 @@ const Beranda = ({navigation}) => {
     <>
       <View style={styles.page}>
         <View style={styles.logoKampus}>
-          <Image source={UserIcon} style={styles.imageSize} />
+          <Image source={IconUkrida} style={styles.imageSize} />
         </View>
         <View style={styles.fotoProfile}>
           <View style={styles.textLabel}>
