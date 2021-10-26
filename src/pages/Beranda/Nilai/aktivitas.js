@@ -2,24 +2,35 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
 const Aktivitas = () => {
+  const data = [
+    {tahun_ajaran: "2019/2020", semester: "genap", status: "aktif", total_sks: "64", ips: '3.4250', ipk:'3.3813', sks_semester: '24'},
+    {tahun_ajaran: "2019/2020", semester: "genap", status: "aktif", total_sks: "64", ips: '3.4250', ipk:'3.3813', sks_semester: '24'},
+    {tahun_ajaran: "2019/2020", semester: "genap", status: "aktif", total_sks: "64", ips: '3.4250', ipk:'3.3813', sks_semester: '24'},
+    {tahun_ajaran: "2019/2020", semester: "genap", status: "aktif", total_sks: "64", ips: '3.4250', ipk:'3.3813', sks_semester: '24'},
+    {tahun_ajaran: "2019/2020", semester: "genap", status: "aktif", total_sks: "64", ips: '3.4250', ipk:'3.3813', sks_semester: '24'},
+
+  ]
+
   return (
+    <>
+    {data.map((data) => 
     <View style={styles.container}>
       <View style={styles.textLayout}>
         <View style={styles.mainLabel}>
           <View>
             <View>
-              <Text>2019/2020 Genap</Text>
+              <Text>{data.tahun_ajaran} {data.semester}</Text>
             </View>
             <View>
-              <Text>Aktif</Text>
+              <Text>{data.status}</Text>
             </View>
           </View>
           <View style={{ alignItems: "center", marginLeft: 100 }}>
-            <Text>3.42</Text>
+            <Text>{data.ips}</Text>
             <Text>IPS</Text>
           </View>
           <View style={{ alignItems: "center" }}>
-            <Text>3.82</Text>
+            <Text>{data.ipk}</Text>
             <Text>IPK</Text>
           </View>
         </View>
@@ -32,14 +43,16 @@ const Aktivitas = () => {
         />
         <View style={{justifyContent: "space-between", flexDirection: 'row', marginTop: 3}}>
           <View>
-            <Text style={{color: "#F8DF8B"}}>SKS Total 64</Text>
+            <Text style={{color: "#F8DF8B"}}>SKS Total {data.total_sks}</Text>
           </View>
           <View>
-            <Text>SKS Semester 24</Text>
+            <Text>SKS Semester {data.sks_semester}</Text>
           </View>
         </View>
       </View>
     </View>
+    )}
+    </>
   );
 };
 

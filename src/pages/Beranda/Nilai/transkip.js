@@ -4,6 +4,17 @@ import { CardTranskip } from "../../../components";
 import { Badge } from "react-native-paper";
 
 const Transkip = () => {
+  const data = [
+    { ruangan: "Lab Akutansi Dasar", sks: "3 SKS", type: "AKA206", nilai: "nilai", nilai_pecahan: "75", grade: "A-" },
+    { ruangan: "Lab Akutansi Dasar", sks: "3 SKS", type: "AKA206", nilai: "nilai", nilai_pecahan: "75", grade: "A-" },
+    { ruangan: "Lab Akutansi Dasar", sks: "3 SKS", type: "AKA206", nilai: "nilai", nilai_pecahan: "75", grade: "A-" },
+    { ruangan: "Lab Akutansi Dasar", sks: "3 SKS", type: "AKA206", nilai: "nilai", nilai_pecahan: "75", grade: "A-" },
+    { ruangan: "Lab Akutansi Dasar", sks: "3 SKS", type: "AKA206", nilai: "nilai", nilai_pecahan: "75", grade: "A-" },
+    { ruangan: "Lab Akutansi Dasar", sks: "3 SKS", type: "AKA206", nilai: "nilai", nilai_pecahan: "75", grade: "A-" },
+    { ruangan: "Lab Akutansi Dasar", sks: "3 SKS", type: "AKA206", nilai: "nilai", nilai_pecahan: "75", grade: "A-" },
+    { ruangan: "Lab Akutansi Dasar", sks: "3 SKS", type: "AKA206", nilai: "nilai", nilai_pecahan: "75", grade: "A-" },
+    { ruangan: "Lab Akutansi Dasar", sks: "3 SKS", type: "AKA206", nilai: "nilai", nilai_pecahan: "75", grade: "A-" },
+  ];
   return (
     <View>
       <ScrollView>
@@ -14,168 +25,26 @@ const Transkip = () => {
             <Text style={styles.textStyle}>Nilai</Text>
           </View>
         </View>
-        <View style={styles.cardList}>
-          <View style={styles.textListLayout}>
-            <View>
-              <Text style={{ marginLeft: 10 }}>Lab Akutansi Dasar</Text>
-              <View style={{ flexDirection: "row", marginLeft: 10 }}>
-                <Text style={{ marginRight: 10 }}>3 SKS</Text>
-                <Text>|</Text>
-                <Text style={{ marginLeft: 10 }}>Regular J</Text>
+        {data.map((data) => (
+          <View style={styles.cardList}>
+            <View style={styles.textListLayout}>
+              <View>
+                <Text style={{ marginLeft: 10 }}>{data.ruangan}</Text>
+                <View style={{ flexDirection: "row", marginLeft: 10 }}>
+                  <Text style={{ marginRight: 10 }}>{data.type}</Text>
+                  <Text>|</Text>
+                  <Text style={{ marginLeft: 10 }}>{data.sks}</Text>
+                </View>
               </View>
-            </View>
-            <View style={styles.textnilai}>
-              <Text style={{ marginRight: 7 }}>75</Text>
+              <View style={styles.textnilai}>
+              <Text style={{ marginRight: 7 }}>{data.nilai}</Text>
               <Text style={{ marginRight: 7, fontWeight: "bold" }}>|</Text>
-              <Badge>A-</Badge>
-              <Text style={{ marginLeft: 7, marginRight: 7 }}>3.70</Text>
+              <Badge>{data.grade}</Badge>
+              <Text style={{ marginLeft: 7, marginRight: 7 }}>{data.nilai_pecahan}</Text>
+            </View>
             </View>
           </View>
-        </View>
-        <View style={styles.cardList}>
-          <View style={styles.textListLayout}>
-            <View>
-              <Text style={{ marginLeft: 10 }}>Lab Akutansi Dasar</Text>
-              <View style={{ flexDirection: "row", marginLeft: 10 }}>
-                <Text style={{ marginRight: 10 }}>3 SKS</Text>
-                <Text>|</Text>
-                <Text style={{ marginLeft: 10 }}>Regular J</Text>
-              </View>
-            </View>
-            <View style={styles.textnilai}>
-              <Text style={{ marginRight: 7 }}>75</Text>
-              <Text style={{ marginRight: 7, fontWeight: "bold" }}>|</Text>
-              <Badge>A-</Badge>
-              <Text style={{ marginLeft: 7, marginRight: 7 }}>3.70</Text>
-            </View>
-          </View>
-        </View>
-        <View style={styles.cardList}>
-          <View style={styles.textListLayout}>
-            <View>
-              <Text style={{ marginLeft: 10 }}>Lab Akutansi Dasar</Text>
-              <View style={{ flexDirection: "row", marginLeft: 10 }}>
-                <Text style={{ marginRight: 10 }}>3 SKS</Text>
-                <Text>|</Text>
-                <Text style={{ marginLeft: 10 }}>Regular J</Text>
-              </View>
-            </View>
-            <View style={styles.textnilai}>
-              <Text style={{ marginRight: 7 }}>75</Text>
-              <Text style={{ marginRight: 7, fontWeight: "bold" }}>|</Text>
-              <Badge>A-</Badge>
-              <Text style={{ marginLeft: 7, marginRight: 7 }}>3.70</Text>
-            </View>
-          </View>
-        </View>
-        <View style={styles.cardList}>
-          <View style={styles.textListLayout}>
-            <View>
-              <Text style={{ marginLeft: 10 }}>Lab Akutansi Dasar</Text>
-              <View style={{ flexDirection: "row", marginLeft: 10 }}>
-                <Text style={{ marginRight: 10 }}>3 SKS</Text>
-                <Text>|</Text>
-                <Text style={{ marginLeft: 10 }}>Regular J</Text>
-              </View>
-            </View>
-            <View style={styles.textnilai}>
-              <Text style={{ marginRight: 7 }}>75</Text>
-              <Text style={{ marginRight: 7, fontWeight: "bold" }}>|</Text>
-              <Badge>A-</Badge>
-              <Text style={{ marginLeft: 7, marginRight: 7 }}>3.70</Text>
-            </View>
-          </View>
-        </View>
-        <View style={styles.cardList}>
-          <View style={styles.textListLayout}>
-            <View>
-              <Text style={{ marginLeft: 10 }}>Lab Akutansi Dasar</Text>
-              <View style={{ flexDirection: "row", marginLeft: 10 }}>
-                <Text style={{ marginRight: 10 }}>3 SKS</Text>
-                <Text>|</Text>
-                <Text style={{ marginLeft: 10 }}>Regular J</Text>
-              </View>
-            </View>
-            <View style={styles.textnilai}>
-              <Text style={{ marginRight: 7 }}>75</Text>
-              <Text style={{ marginRight: 7, fontWeight: "bold" }}>|</Text>
-              <Badge>A-</Badge>
-              <Text style={{ marginLeft: 7, marginRight: 7 }}>3.70</Text>
-            </View>
-          </View>
-        </View>
-        <View style={styles.cardList}>
-          <View style={styles.textListLayout}>
-            <View>
-              <Text style={{ marginLeft: 10 }}>Lab Akutansi Dasar</Text>
-              <View style={{ flexDirection: "row", marginLeft: 10 }}>
-                <Text style={{ marginRight: 10 }}>3 SKS</Text>
-                <Text>|</Text>
-                <Text style={{ marginLeft: 10 }}>Regular J</Text>
-              </View>
-            </View>
-            <View style={styles.textnilai}>
-              <Text style={{ marginRight: 7 }}>75</Text>
-              <Text style={{ marginRight: 7, fontWeight: "bold" }}>|</Text>
-              <Badge>A-</Badge>
-              <Text style={{ marginLeft: 7, marginRight: 7 }}>3.70</Text>
-            </View>
-          </View>
-        </View>
-        <View style={styles.cardList}>
-          <View style={styles.textListLayout}>
-            <View>
-              <Text style={{ marginLeft: 10 }}>Lab Akutansi Dasar</Text>
-              <View style={{ flexDirection: "row", marginLeft: 10 }}>
-                <Text style={{ marginRight: 10 }}>3 SKS</Text>
-                <Text>|</Text>
-                <Text style={{ marginLeft: 10 }}>Regular J</Text>
-              </View>
-            </View>
-            <View style={styles.textnilai}>
-              <Text style={{ marginRight: 7 }}>75</Text>
-              <Text style={{ marginRight: 7, fontWeight: "bold" }}>|</Text>
-              <Badge>A-</Badge>
-              <Text style={{ marginLeft: 7, marginRight: 7 }}>3.70</Text>
-            </View>
-          </View>
-        </View>
-        <View style={styles.cardList}>
-          <View style={styles.textListLayout}>
-            <View>
-              <Text style={{ marginLeft: 10 }}>Lab Akutansi Dasar</Text>
-              <View style={{ flexDirection: "row", marginLeft: 10 }}>
-                <Text style={{ marginRight: 10 }}>3 SKS</Text>
-                <Text>|</Text>
-                <Text style={{ marginLeft: 10 }}>Regular J</Text>
-              </View>
-            </View>
-            <View style={styles.textnilai}>
-              <Text style={{ marginRight: 7 }}>75</Text>
-              <Text style={{ marginRight: 7, fontWeight: "bold" }}>|</Text>
-              <Badge>A-</Badge>
-              <Text style={{ marginLeft: 7, marginRight: 7 }}>3.70</Text>
-            </View>
-          </View>
-        </View>
-        <View style={styles.cardList}>
-          <View style={styles.textListLayout}>
-            <View>
-              <Text style={{ marginLeft: 10 }}>Lab Akutansi Dasar</Text>
-              <View style={{ flexDirection: "row", marginLeft: 10 }}>
-                <Text style={{ marginRight: 10 }}>3 SKS</Text>
-                <Text>|</Text>
-                <Text style={{ marginLeft: 10 }}>Regular J</Text>
-              </View>
-            </View>
-            <View style={styles.textnilai}>
-              <Text style={{ marginRight: 7 }}>75</Text>
-              <Text style={{ marginRight: 7, fontWeight: "bold" }}>|</Text>
-              <Badge>A-</Badge>
-              <Text style={{ marginLeft: 7, marginRight: 7 }}>3.70</Text>
-            </View>
-          </View>
-        </View>
+        ))}
       </ScrollView>
     </View>
   );
