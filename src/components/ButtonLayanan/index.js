@@ -1,3 +1,1 @@
-import ButtonLayanan from "./buttonLayanan"
-
-export {ButtonLayanan}
+export { default as ButtonLayanan } from './buttonLayanan'

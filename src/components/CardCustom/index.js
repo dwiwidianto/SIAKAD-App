@@ -1,7 +1,5 @@
-import CardTotalKuliah from "./CardTotalKuliah"
-import CardInformation from "./CardInformation"
-import CardNilai from "./CardNilai";
-import CardListMatkul from "./CardListMatkul";
-import CardTranskip from "./CardTranskip";
-
-export {CardInformation, CardListMatkul, CardNilai, CardTotalKuliah, CardTranskip}
+export {default as CardTotalKuliah} from "./CardTotalKuliah"
+export {default as CardInformation} from "./CardInformation"
+export {default as CardNilai} from "./CardNilai";
+export {default as CardListMatkul} from "./CardListMatkul";
+export {default as CardTranskip} from "./CardTranskip";

@@ -1,5 +1,3 @@
-import emailValidator from "./emailValidator";
-import nameValidator from "./nameValidator";
-import passwordValidator from "./passwordValidator";
-
-export { emailValidator, nameValidator, passwordValidator };
+export  {default as emailValidator} from "./emailValidator";
+export  {default as nameValidator} from "./nameValidator";
+export  {default as passwordValidator} from "./passwordValidator";

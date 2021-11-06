@@ -1,3 +1,2 @@
-import Beranda from "./beranda";
-import Nilai from "./Nilai";
-export {Beranda, Nilai}
+export { default as Beranda } from "./beranda";
+export { default as Nilai } from "./Nilai";

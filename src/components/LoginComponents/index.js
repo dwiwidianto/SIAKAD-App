@@ -1,8 +1,6 @@
-import BackButton from './BackButton'
-import ButtonLogin from './ButtonLogin'
-import Logo from './Logo'
-import TextInput from './TextInput'
-import Header from './Header'
-import Background from './Background'
-
-export {ButtonLogin, Logo, TextInput, BackButton, Header, Background}
+export { default as BackButton } from "./BackButton";
+export { default as ButtonLogin } from "./ButtonLogin";
+export { default as Logo } from "./Logo";
+export { default as TextInput } from "./TextInput";
+export { default as Header } from "./Header";
+export { default as Background } from "./Background";

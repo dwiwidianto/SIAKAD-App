@@ -1,3 +1,1 @@
-import Overview from "./overview";
-
-export {Overview}
+import { default as Overview } from "./overview";

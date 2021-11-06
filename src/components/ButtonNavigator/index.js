@@ -1,3 +1,1 @@
-import ButtonNavigator from './buttonNavigator'
-
-export {ButtonNavigator}
+export { default as ButtonNavigator } from './buttonNavigator'

@@ -1,5 +1,4 @@
-// import IconHome from "./Home.svg";
-// import IconHomeActive from "./HomeActive.svg";
+
 
 /* Icon Navigator*/
 export { default as IconOverview } from "./Overview.svg";
